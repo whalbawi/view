@@ -1,11 +1,11 @@
-#ifndef SKELETON_SKELETON_H_
-#define SKELETON_SKELETON_H_
+#ifndef VIEW_VIEW_H_
+#define VIEW_VIEW_H_
 
 #include <string>
 
-namespace skeleton {
+namespace view {
 
-class Skeleton {
+class View {
   public:
     static std::string get_version();
 
@@ -16,6 +16,6 @@ class Skeleton {
     int result;
 };
 
-} // namespace skeleton
+} // namespace view
 
-#endif // SKELETON_SKELETON_H_
+#endif // VIEW_VIEW_H_
