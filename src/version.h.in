@@ -1,23 +1,23 @@
-#ifndef SKELETON_VERSION_H_
-#define SKELETON_VERSION_H_
+#ifndef VIEW_VERSION_H_
+#define VIEW_VERSION_H_
 
-namespace skeleton {
+namespace view {
 
 namespace {
 
-#cmakedefine SKELETON_PROJECT_VERSION "@SKELETON_PROJECT_VERSION@"
-#cmakedefine SKELETON_GIT_COMMIT_HASH "@SKELETON_GIT_COMMIT_HASH@"
+#cmakedefine VIEW_PROJECT_VERSION "@VIEW_PROJECT_VERSION@"
+#cmakedefine VIEW_GIT_COMMIT_HASH "@VIEW_GIT_COMMIT_HASH@"
 
 } // namespace
 
 std::string version() {
-    return SKELETON_PROJECT_VERSION;
+    return VIEW_PROJECT_VERSION;
 }
 
 std::string git_commit_hash() {
-    return SKELETON_GIT_COMMIT_HASH;
+    return VIEW_GIT_COMMIT_HASH;
 }
 
-} // namespace skeleton
+} // namespace view
 
-#endif // SKELETON_VERSION_H_
+#endif // VIEW_VERSION_H_
