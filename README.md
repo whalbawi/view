@@ -1,5 +1,5 @@
 # View
-View is a C++ project view written in C++14.
+View is a Text User Interface (TUI) design library written in C++17.
 
 ## Prerequisites
 The project is built using [CMake](https://cmake.org/) and requires version 3.20 or newer to work correctly.
