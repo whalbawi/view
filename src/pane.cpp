@@ -13,7 +13,7 @@ void Pane::put_row(const std::string& row, size_t pos_y, size_t pos_x) {
     }
 }
 
-void Pane::h_line(wchar_t ch, size_t len, size_t pos_y, size_t pos_x) {
+void Pane::h_line(wchar_t ch, size_t pos_y, size_t pos_x, size_t len) {
     for (size_t i = 0; i < len; ++i) {
         put_char(ch, pos_y, pos_x + i);
     }

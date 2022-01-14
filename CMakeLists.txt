@@ -52,6 +52,7 @@ set(VIEW_SRC_LIST
 
 # Test files
 set(VIEW_TEST_LIST
+    ${VIEW_TEST_DIR}/frame_view_test.cpp
     ${VIEW_TEST_DIR}/text_view_test.cpp
 )
 
