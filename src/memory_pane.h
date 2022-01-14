@@ -8,18 +8,17 @@
 
 namespace view {
 
-// TODO (whalbawi): Fill me in
+// `MemoryPane` emulates a fixed-size terminal, where every character is initially null ('\0').
 class MemoryPane : public Pane {
   public:
+    std::vector<std::wstring> rows; // Exposed for testing
+
     MemoryPane(size_t height, size_t width);
 
     void put_char(wchar_t ch, size_t pos_y, size_t pos_x) override;
 
   private:
     Pane* clone() override;
-
-  private:
-    std::vector<std::string> rows;
 };
 
 } // namespace view
