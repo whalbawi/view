@@ -18,7 +18,7 @@ TEST_F(FrameViewTest, Render) {
     for (int i = 0; i < pane.rows.size(); ++i) {
         std::wstring& row = pane.rows[i];
         for (int j = 0; j < row.size(); ++j) {
-            // `FramView` only touches the `Pane`'s border
+            // `FrameView` should only touch the `Pane`'s border
             if (i == 0 || i == pane.rows.size() - 1 || j == 0 || j == row.size() - 1) {
                 ASSERT_NE(row[j], L'\0');
             } else {
