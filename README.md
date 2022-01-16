@@ -1,6 +1,8 @@
 # View
 View is a Text User Interface (TUI) design library written in C++17.
 
+[![build](https://github.com/whalbawi/view/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/whalbawi/view/actions/workflows/build.yml)
+
 ## Prerequisites
 The project is built using [CMake](https://cmake.org/) and requires version 3.20 or newer to work correctly.
 
