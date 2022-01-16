@@ -34,9 +34,9 @@ class Engine {
     void run();
 
   private:
-    std::shared_ptr<View> main_view;
-
     void refresh();
+
+    std::shared_ptr<View> main_view;
 };
 
 } // namespace view

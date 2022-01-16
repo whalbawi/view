@@ -3,7 +3,6 @@
 #include "ncurses.h"
 
 namespace view {
-
 NCursesPane::NCursesPane(WINDOW* root_window)
     : root_window(root_window), Pane(0, 0, getmaxy(root_window), getmaxx(root_window)) {}
 

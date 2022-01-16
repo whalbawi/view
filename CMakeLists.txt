@@ -41,9 +41,10 @@ configure_file(${VIEW_SRC_DIR}/version.h.in ${CMAKE_CURRENT_BINARY_DIR}/gen/vers
 
 # Source files
 set(VIEW_SRC_LIST
-    ${VIEW_SRC_DIR}/engine.cpp
     ${VIEW_SRC_DIR}/frame_view.cpp
+    ${VIEW_SRC_DIR}/split_view.cpp
     ${VIEW_SRC_DIR}/text_view.cpp
+    ${VIEW_SRC_DIR}/engine.cpp
     ${VIEW_SRC_DIR}/event.cpp
     ${VIEW_SRC_DIR}/memory_pane.cpp
     ${VIEW_SRC_DIR}/ncurses_pane.cpp
@@ -53,6 +54,7 @@ set(VIEW_SRC_LIST
 # Test files
 set(VIEW_TEST_LIST
     ${VIEW_TEST_DIR}/frame_view_test.cpp
+    ${VIEW_TEST_DIR}/split_view_test.cpp
     ${VIEW_TEST_DIR}/text_view_test.cpp
 )
 
@@ -71,5 +73,9 @@ target_link_libraries(view-tests view gtest_main)
 add_test(unit-tests view-tests)
 
 # Examples
+# TODO (whalbawi): Conditionally build examples
+add_executable(split ${VIEW_EXAMPLES_DIR}/split.cpp)
+target_link_libraries(split view)
+
 add_executable(text ${VIEW_EXAMPLES_DIR}/text.cpp)
 target_link_libraries(text view)
